@@ -44,11 +44,9 @@ Subscribe to **Zomboid Map Companion Beta** on the Steam Workshop.
 Zomboid Map Companion uses Chromium Embedded Framework through the CinemaMod MCEF project. These native browser components must be installed separately.
 
 1. Visit the [GitHub Releases page](../../releases).
-2. Download **Zomboid Map Companion Chromium Runtime Installer.zip** from the latest release.
-3. Extract the ZIP to a folder on your computer.
-4. Open the extracted folder and double-click `Install Chromium.cmd`.
-5. Review the information displayed by the installer and approve the installation.
-6. Wait for the installer to download, verify, and extract the Chromium runtime.
+2. Download **ZMC_Chromium_Installer_v0.1.0.exe** from the latest release.
+3. Review the information displayed by the installer and approve the installation.
+4. Wait for the installer to download, verify, and extract the Chromium runtime.
 
 The installer downloads the browser runtime from CinemaMod's distribution. Chromium binaries are not included in the Steam Workshop mod.
 
