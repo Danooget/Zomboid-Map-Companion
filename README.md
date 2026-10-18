@@ -95,3 +95,5 @@ Third-party components remain subject to their respective licenses.
 Zomboid Map Companion is under active development. Features, compatibility, and installation procedures may change between releases.
 
 Bug reports and feedback are welcome through GitHub Issues or the Steam Workshop page.
+
+This project was created with the assistance of AI.
