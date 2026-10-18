@@ -30,7 +30,8 @@ LiveWebMap brings the Project Zomboid online map directly into your game through
 Install and configure the ZombieBuddy Java mod loader according to its installation instructions.
 
 [ZombieBuddy Github Repo](https://github.com/zed-0xff/ZombieBuddy)
-[ZombieBuddy Steam Workshop Link](https://steamcommunity.com/workshop/filedetails/?id=3619862853)
+
+[ZombieBuddy Steam Workshop](https://steamcommunity.com/workshop/filedetails/?id=3619862853)
 
 ### 2. Subscribe to LiveWebMap
 
