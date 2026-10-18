@@ -1,0 +1,6 @@
+name=Live Web Map
+id=LiveWebMap
+description=Interactive Project Zomboid web map
+require=\ZombieBuddy
+javaJarFile=media/java/LiveWebMap.jar
+javaPkgName=livemap

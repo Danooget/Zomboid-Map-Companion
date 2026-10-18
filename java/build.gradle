@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+}
+
+// Compile CinemaMod's pinned JOGL-free Java CEF fork directly from the
+// submodule already downloaded by setup-probe.ps1.
+sourceSets {
+    main {
+        java {
+            srcDir('thirdparty/mcef/common/java-cef/java')
+            exclude '**/tests/**'
+            // Legacy standalone Friwi JCEF code is incompatible with CinemaMod's fork.
+            exclude '**/BrowserHelper.java'
+            exclude '**/BrowserHost.java'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files(
+        'C:/Program Files (x86)/Steam/steamapps/common/ProjectZomboid/ZombieBuddy.jar',
+        'C:/Program Files (x86)/Steam/steamapps/common/ProjectZomboid/projectzomboid.jar'
+    )
+
+    // Keep the existing project's Gson dependency.
+    implementation fileTree(
+        dir: "${System.getProperty('user.home')}/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson",
+        include: '**/*.jar'
+    )
+}
+
+tasks.named('jar') {
+    archiveFileName = 'LiveWebMap.jar'
+    // Do not replace the original installed mod during build.
+    destinationDirectory = layout.buildDirectory.dir('libs')
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    exclude 'zombie/**'
+    exclude 'se/krka/kahlua/**'
+    exclude 'me/zed_0xff/zombie_buddy/**'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    // Build 42's projectzomboid.jar has major class version 69 (Java 25).
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
