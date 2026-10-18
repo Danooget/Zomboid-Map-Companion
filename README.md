@@ -29,6 +29,9 @@ LiveWebMap brings the Project Zomboid online map directly into your game through
 
 Install and configure the ZombieBuddy Java mod loader according to its installation instructions.
 
+[ZombieBuddy Github Repo](https://github.com/zed-0xff/ZombieBuddy)
+[ZombieBuddy Steam Workshop Link](https://steamcommunity.com/workshop/filedetails/?id=3619862853)
+
 ### 2. Subscribe to LiveWebMap
 
 Subscribe to **LiveWebMap Beta** on the Steam Workshop.
@@ -81,7 +84,7 @@ LiveWebMap uses and integrates with the following independent projects:
 
 - [CinemaMod / MCEF](https://github.com/CinemaMod/mcef) — Chromium integration and browser runtime
 - [Project Zomboid Map](https://projectzomboidmap.com/) — Interactive online map
-- ZombieBuddy — Java mod-loading support
+- [ZombieBuddy](https://github.com/zed-0xff/ZombieBuddy) — Java mod-loading support
 - [Project Zomboid](https://projectzomboid.com/) — The game
 
 LiveWebMap is an independent community project and is not officially affiliated with The Indie Stone, CinemaMod, or the Project Zomboid Map website.
@@ -92,4 +95,4 @@ Third-party components remain subject to their respective licenses.
 
 LiveWebMap is under active development. Features, compatibility, and installation procedures may change between releases.
 
-Bug reports and feedback are welcome through GitHub Issues.
+Bug reports and feedback are welcome through GitHub Issues or the Steam Workshop page.
